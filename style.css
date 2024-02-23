@@ -1,0 +1,8 @@
+.list-item {
+    color: black;
+    cursor: pointer; 
+  }
+
+  .list-item:hover {
+    color: blue;
+  }

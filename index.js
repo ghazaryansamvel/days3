@@ -1,6 +1,11 @@
-let button = document.querySelector('.changeButton')
-let text = document.querySelector('.text')
+let listItems = document.querySelectorAll('.list-item');
 
-button.addEventListener('click', function () {
-    text.textContent = 'I Change The Text!!!';
-});
+    listItems.forEach(item => {
+      item.addEventListener('mouseover', function() {
+        this.style.color = 'red';
+      });
+
+      item.addEventListener('mouseout', function() {
+        this.style.color = 'black';
+      });
+    });
